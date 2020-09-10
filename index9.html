@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customer's Info</title>
+	<style type="text/css">
+		label{
+			float: left;
+			font-size: 20px;
+		}
+		#submitb,#resetb{
+			background-color: #008CBA;
+			color: #fff;
+			border: 1px solid #fff;
+			width: 100px;
+			height: 40px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body style="background-color:#008CBA;">
+	<div style="width: 300px; height: 450px; border: 2px solid #fff; padding-left: 10px;padding-right: 10px; background-color: #fff; margin: 90px 0 0 500px;">
+	<h2 style="background-color: #008CBA; color: white;">Customer's Information</h2>
+	<br/>
+	<form>
+	<label>Name:</label>
+	<input type="text" name="cname">
+	<hr/>
+	<label>Address:</label>
+	<textarea rows="4" cols="20"></textarea>
+	<hr/>
+	<label>Gender:</label>
+	<select>
+		<option>Male</option>
+		<option>Female</option>
+		<option>Other</option>
+	</select>
+	<hr/>
+	<label>Languages known:</label>
+	<select multiple>
+		<option>English</option>
+		<option>Hindi</option>
+		<option>Kannada</option>
+		<option>Marathi</option>
+		<option>Telagu</option>
+	</select>
+	<hr/>
+	<label>City:</label>
+	<input type="text" name="city">
+	<hr/>
+	<br/><br/><br/>
+
+	<input type="submit" id="submitb">
+	<input type="reset" value="Reset" id="resetb" >
+	</form>
+	</div>
+</body>
+</html>

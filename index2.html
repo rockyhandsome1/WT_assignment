@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List</title>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin-left: 2%;
+		}
+	</style>
+	<script type="text/javascript" >
+		function onloadrun(){
+			document.getElementById('bl1').style.display="none";
+			document.getElementById('nl1').style.display="none";
+			document.getElementById('dl1').style.display="none";
+		}
+		function onblclick(){
+			document.getElementById('bl1').style.display="block";
+			document.getElementById('nl1').style.display="none";
+			document.getElementById('dl1').style.display="none";
+		}
+		function onnlclick(){
+			document.getElementById('bl1').style.display="none";
+			document.getElementById('nl1').style.display="block";
+			document.getElementById('dl1').style.display="none";
+		}
+		function ondlclick(){
+			document.getElementById('bl1').style.display="none";
+			document.getElementById('nl1').style.display="none";
+			document.getElementById('dl1').style.display="block";
+		}
+	</script>
+</head>
+<body onload="onloadrun()">
+
+	<!-- <iframe style="width: 20%;float: left; height: 90%;" src="index21.html" id="one" name="one">
+	</iframe>
+
+	<iframe style="width: 70%; height: 100%; height: 90%;" src="index22.html" id="two"name="two"></iframe> -->
+	<br/><br/>
+	<div style="width: 20%;float: left;margin-left: 5px; border: 1px solid #000;height: 80%;padding: 20px;">
+		<h3>Types of Lists</h3>
+		<a href="#" id="bl" onclick="onblclick()"> Bulleted List </a><br/>
+		<a href="#" id="nl" onclick="onnlclick()"> Numbered List </a><br/>
+		<a href="#" id="dl" onclick="ondlclick()"> Definition List </a><br/>
+	</div>
+
+
+	<div style="width: 70%;float: left; margin-left: 5px; border: 1px solid #000; height: 80%; padding: 20px;">
+		<span id="bl1">
+		<h4>Disc</h4>
+		<ul type="disc">
+			<li>one</li>
+			<li>two</li>
+		</ul>
+		<h4>Circle</h4>
+		<ul type="circle">
+			<li>one</li>
+			<li>two</li>
+		</ul>
+		<h4>Square</h4>
+		<ul type="square">
+			<li>one</li>
+			<li>two</li>
+		</ul>
+	</span>
+
+	<span id="nl1">
+		<h4>Number</h4>
+		<ol>
+			<li>one</li>
+			<li>two</li>
+		</ol>
+		<h4>Roman</h4>
+		<ol type="I">
+			<li>one</li>
+			<li>two</li>
+		</ol>
+		<h4>Alphabet</h4>
+		<ol type="a">
+			<li>one</li>
+			<li>two</li>
+		</ol>
+	</span>
+
+	<span id="dl1">
+		<dl>
+  			<dt>Animal</dt>
+  				<dd>Dog</dd>
+  			<dt>Bird</dt>
+  				<dd>Sparrow</dd>
+		</dl>
+	</span>
+	</div>
+
+</body>
+</html>

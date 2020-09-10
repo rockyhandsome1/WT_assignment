@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function findc(e){
+			console.log(e.clientX+" "+e.clientY);
+		}
+
+	</script>
+	<style type="text/css">
+		div{
+			margin-left: 10px;
+			margin-top: 20px;
+  			width: 800px;
+  			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  			text-align: center;
+		}
+	</style>
+</head>
+<body onmousemove="findc(event)" style="margin: 10px 0 0 300px;">
+	<div>
+	<img src="table1.jpeg" alt="table image" usemap="#workmap">
+
+	<map name="workmap">
+		<area shape="rect" coords="120,45,350,350" href="#" onclick="alert('Notebook')">
+		<area shape="circle" coords="485,300,72" href="#" onclick="alert('coffee')">
+		<area shape="poly" coords="436,48,416,80,413,112,414,137,424,154,428,176,459,187,473,171,490,181,500,181,531,183,543,156,536,139,546,115,581,100,572,80,547,71,541,42,523,44,496,33,476,22,457,37,440,35" href="#" onclick="alert('Bonsai plant with pot is better:)')">
+	</map>
+	<h2>Image Mapping with CSS</h2>
+	</div>
+</body>
+</html>

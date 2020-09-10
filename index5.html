@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		a{
+			float: left;
+			padding-left: 20px;
+		}
+	</style>
+
+	<script type="text/javascript">
+
+		function ol(){
+			document.getElementById('od').style.display="none";
+			document.getElementById('td').style.display="none";
+			document.getElementById('thd').style.display="none";
+		}
+
+		function one(){
+			document.getElementById('od').style.display="block";
+			document.getElementById('td').style.display="none";
+			document.getElementById('thd').style.display="none";
+		}
+
+		function two(){
+			document.getElementById('od').style.display="none";
+			document.getElementById('td').style.display="block";
+			document.getElementById('thd').style.display="none";
+		}
+
+		function three(){
+			document.getElementById('od').style.display="none";
+			document.getElementById('td').style.display="none";
+			document.getElementById('thd').style.display="block";
+		}
+	</script>
+
+</head>
+<body onload="ol()">
+
+	<h4>Three Products</h4>
+	<a href="#" onclick="one()">SU-30MKI</a>
+	<a href="#" onclick="two()">Rafale</a>
+	<a href="#" onclick="three()">F-22 Raptor</a>
+	<br/><br/>
+
+<div>
+		
+		<div id="od" style="border: 1px solid #000; width: 30%;">
+			<img src="su30.jfif" style="width: 200px; height: 150px;">
+			<br/>
+			<pre>
+Role	     	Multirole air superiority fighter
+National origin	Russia / India
+Manufacturer	Hindustan Aeronautics Limited
+Design group	Sukhoi
+First flight	Su-30МК: 1 July 1997 
+				Su-30MKI: 2000
+Introduction	27 September 2002
+Status			In service
+Primary user	Indian Air Force
+Produced		Su-30MKI: 2000–present
+Number built	272 as of March 2020[1][2]
+Unit cost		₹358 crore (US$50 million) in 2014
+Developed from	Sukhoi Su-30
+Variants	Sukhoi Su-30MKM
+			</pre>
+		</div>
+	</div>
+	<div>
+		
+		<div id="td" style="border: 1px solid #000; width: 30%;">
+			<img src="rafale.jpg" style="width: 200px; height: 150px;">
+			<pre>
+Role            Multirole fighter
+National origin France
+Manufacturer    Dassault Aviation
+First flight    Rafale A demo: 4 July 1986 
+                Rafale C: 19 May 1991
+Introduction    18 May 2001
+Status          In service
+Primary users   French Air Force
+                French Navy
+                Egyptian Air Force
+                Qatar Air Force
+Produced        1986–present
+Number built    201 as of 2019
+Program cost    €45.9 billion (as of FY2013)
+Unit cost       Rafale B: €74M (flyaway cost, FY2013)
+                Rafale C: €68.8M (flyaway cost, FY2013)
+                Rafale M: €79M (flyaway cost, FY2011)
+			</pre>
+		</div>
+	</div>
+	<div>
+	
+	<div id="thd" style="border: 1px solid #000; width: 30%;">
+		<img src="raptor.jpg" style="width: 200px; height: 150px;">
+		<pre>
+Role            Stealth air superiority fighter
+National origin United States
+Manufacturer    Lockheed Martin Aeronautics
+                Boeing Defense, Space & Security
+First flight    7 September 1997; 23 years ago
+Introduction    15 December 2005
+Status          In service
+Primary user    United States Air Force
+Produced        1996–2011
+Number built    195 (8 test and 187 operational aircraft)
+Program cost    US$67.3 billion (as of 2010)
+Unit cost	    US$150 million (flyaway cost for FY2009)
+Developed from  Lockheed YF-22
+Developed into  Lockheed Martin X-44 MANTA
+                Lockheed Martin FB-22
+		</pre>
+	</div>
+
+</div>
+
+</body>
+</html>
