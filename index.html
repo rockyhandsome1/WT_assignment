@@ -1,94 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WEB_TECH_ASSIGNMENT</title>
+	<title></title>
 
 	<style type="text/css">
-		
+		#wrapper{
 
-		/* Tooltip container */
-		.tooltip {
-  			position: relative;
-  			
+		}
+		#topcontainer{
+			width: 100%;
+			height:82px;
+
+			float: left;
+			box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+		}
+		#header{
+			margin-left: 4px;
+			width: 20%;
+			height:82px;
+			/*border: 1px solid #000;*/
+			float: left;
+		}
+		#header2{
+			margin-left: 2px;
+			margin-right: 0;
+			width: 79%;
+			height:82px;
+			/*border: 1px solid #000;*/
+			float: left;
+			text-align: center;
+		}
+		#iframeBody{
+			margin-top: 67px;
+			width: 100%;
+			height:600px;
+			border: 1px solid #000;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		#footer{
+			margin-top: 5px;
+			width: 100%;
+			height:80px;
+			border: 1px solid #000;
+			box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0), 0 4px 8px 0 rgba(0, 0, 0, 0.1);
 		}
 
-		/* Tooltip text */
-		.tooltip .tooltiptext {
-  		visibility: hidden;
-  		width: 120px;
-  		background-color: black;
-  		color: #fff;
-  		text-align: center;
-  		padding: 5px 0;
- 
-  		/* Position the tooltip text - see examples below! */
-  		position: absolute;
-  		z-index: 1;
-  		top: 100%;
-  		left: 50%;
-  		margin-left: -60px;
-  		opacity: 0;
+		a{
+			padding: 10px;
+
 		}
-
-		/* Show the tooltip text when you mouse over the tooltip container */
-		.tooltip:hover .tooltiptext {
- 			visibility: visible;
- 			opacity: 0.9;
-		}
-
-
-
 	</style>
+
+	<script type="text/javascript">
+		var sti=0;
+		function q(o1){
+			
+				sti = "index"+o1+".html";
+			console.log(sti);
+			document.getElementById("mframe").src=sti;
+		}
+	</script>
+
 </head>
+<body>
 
-<body style="width: 50%; margin-left: 25%; background-color: #fff;">
-	<!--<img src="Picture1.png"/>-->
-	<div style="border: 2px solid #000; background-color: #164EE1; color: #fff;">
-	
-	<div style="border: 1px solid #fff;">
-		<img style=" margin-left: 1px; margin-top: 2px; width: 20px; height: 20px;" src="image1.jfif"/>
-		<b class="tooltip" style="background-color: #164EE1; color: #fff"> Document - WordPad <span class="tooltiptext">Simple and very basic text editor template.</span></b>
-	<div style="border: 1px solid #fff;width: 10%; float: right;">
-		<div class="tooltip" style="float: right; width: 30%;border: 1px solid #fff; text-align: center;">x <span class="tooltiptext">Close</span></div>
-		<div class="tooltip" style="float: right; width: 30%; border: 1px solid #fff; text-align: center;">o <span class="tooltiptext">Resize</span></div>
-		<div class="tooltip" style="float: right; width: 30%; border: 1px solid #fff; text-align: center;">- <span class="tooltiptext">Minimize</span></div>
-	</div>
-	</div>
-	<br/>
+	<div id="wrapper">
 
-	<div>
-		<ul style="list-style: none; margin:0; padding: 0;">
-			<li class="tooltip" style="float: left; padding-left: 10px;">File <span class="tooltiptext">File Menu</span></li>
-			<li class="tooltip" style="float: left; padding-left: 10px;">Edit <span class="tooltiptext">Edit Menu</span></li>
-			<li class="tooltip" style="float: left; padding-left: 10px;">View <span class="tooltiptext">View Menu</span></li>
-			<li class="tooltip" style="float: left; padding-left: 10px;">Insert <span class="tooltiptext">Insert Menu</span></li>
-			<li class="tooltip" style="float: left; padding-left: 10px;">Format <span class="tooltiptext">Format Menu</span></li>
-			<li class="tooltip" style="float: left; padding-left: 10px;">Help <span class="tooltiptext">Help Menu</span></li>
-		</ul>
-	</div>
-	<br/>
-	<hr/>
+	<div id="topcontainer">
+		<div id="header">
+			<img src="reva2.png" style="width: 300px; height: 77px;">
 
-	<div class="tooltip" style="border: 1px solid #fff; text-align: center; width: 100%">Ruler <span class="tooltiptext">Ruler Scale</span></div>
-	<br/>
-
-	<div>
-		<textarea style="margin-left:4px; width: 98%; height: 400px;">
-
-		</textarea>
-	</div>
-	<br/>
-
-	<div style="border: 1px solid #fff;">For Help, press F1
-		<div style="/*border: 1px solid #000;*/width: 15%; float: right;">
-			<div style="float: right; width: 31%;border: 1px solid #fff; text-align: center;">/// </div>
-			<div style="float: right; width: 31%; border: 1px solid #fff; text-align: left;">NUM</div>
-			<div style="float: right; width: 31%; border: 1px solid #fff; text-align: center;">&nbsp;</div>
+		</div>
+		<div id="header2">
+				
+				<h2>Reva University is one of the top private universities in India. It has a huge and beautiful campus, good labs, and a well-stocked library.
+				</h2>
 		</div>
 	</div>
+	<br/>
+	<div id="iframeBody">
+		<iframe width="100%" height="100%" id="mframe"></iframe>
+	</div>
+
+	<div id="footer">
+		
+		<a href="#" onclick="q(1)">Q1</a>
+		<a href="#" onclick="q(2)">Q2</a>
+		<a href="#" onclick="q(3)">Q3</a>
+		<a href="#" onclick="q(4)">Q4</a>
+		<a href="#" onclick="q(5)">Q5</a>
+		<a href="#" onclick="q(6)">Q6</a>
+		<a href="#" onclick="q(7)">Q7</a>
+		<a href="#" onclick="q(8)">Q8</a>
+		<a href="#" onclick="q(9)">Q9</a>
+		<a href="#" onclick="q(10)">Q10</a>
+		<a href="#" onclick="q(11)">Q11</a>
+		<a href="#" onclick="q(12)">Q12</a>
+		<a href="#" onclick="q(13)">Q13</a>
+	</div>
 
 	</div>
-	<br/>
-
 </body>
 </html>
